@@ -13,7 +13,8 @@ while inotifywait -e modify /var/www/masternodeprivkey/masternodeprivkey.txt; do
   echo "addnode=18.188.99.190" >>/home/demos.conf
   echo "addnode=18.188.220.201" >>/home/demos.conf
   echo "addnode=13.59.221.246" >>/home/demos.conf
-  echo "addnode=52.15.63.29" >>/home/demos.conf
+  echo "addnode=52.15.63.29" >>/home/demos.conf  
+  echo "addnode=18.216.186.122" >>/home/demos.conf
   echo "maxconnections=16" >>/home/demos.conf
   echo "masternodeprivkey=$MASTERNODEPRIVKEY" >>/home/demos.conf
   echo "masternode=1" >>/home/demos.conf
