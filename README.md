@@ -10,9 +10,9 @@ What the script does:
 Installs docker and builds 2 docker containters, 1 master node containter, 1 seed node containter.  Provides a TEMP website for you to enter your Master Node Priv Key.  Once you enter your Master Node Priv Key, web server is shutdown and master node is started. Read full Installation Instructions below.
 
 
-This will create (1) master node and (1) seed node: 
+This will create (1) master node: 
 
-2. Masternode on port 5005
+1. Masternode on port 5005
 
 *all rewards goto you for helping out with the seeding. 
 
