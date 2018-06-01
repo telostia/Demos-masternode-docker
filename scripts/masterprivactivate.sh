@@ -17,7 +17,7 @@ while inotifywait -e modify /var/www/masternodeprivkey/masternodeprivkey.txt; do
   echo "maxconnections=16" >>/home/demos.conf
   echo "masternodeprivkey=$MASTERNODEPRIVKEY" >>/home/demos.conf
   echo "masternode=1" >>/home/demos.conf
-  echo "masternodeaddr=$IP:5005" >>/home/demos.conf
+  echo "externalip=$IP:5005" >>/home/demos.conf
   #docker stop demosmasternode
   docker run -d --name demosmasternode demosmasternode
   docker cp /home/demos.conf demosmasternode:/root/.demoscore/
@@ -25,7 +25,7 @@ while inotifywait -e modify /var/www/masternodeprivkey/masternodeprivkey.txt; do
   docker commit demosmasternode demosmasternode
   docker container rm demosmasternode
   echo 'loading master node...'
-  docker run -d --restart always -p 5005:5005 --name demosmasternode demosmasternode /home/demosd -datadir=/root/.demoscore -conf=/root/.demoscore/dextro.conf
+  docker run -d --restart always -p 5005:5005 --name demosmasternode demosmasternode /home/demosd -datadir=/root/.demoscore -conf=/root/.demoscore/demos.conf
   #docker stop demosmasternode
   docker start demosmasternode
   systemctl stop apache2
