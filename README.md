@@ -1,6 +1,6 @@
 # fork and credits go to CryptoHawaii Pepe/Meme Coin Docker 
 # original github: https://github.com/CryptoHawaii-com/pepecoin-Dockerfiles
-# Modified to work with Demospay ( Currently demos(demos) coin)
+# Modified to work with Demospay (demos) coin.
 
 ### Details:
 Demospay Master Node - Ideally this is run on 2 CPU(s).
